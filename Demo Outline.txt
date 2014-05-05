@@ -4,11 +4,42 @@ Demo Outline
 	-Add angular module definition - glic angular module (snippet)
 
 -Create index.html
-	-Create boilerplate html doc - glic html5 (snippet)
-	-Add angular dependency - glic angular libs (snippet)
-	-Add app.js reference - glic myapp (snippet)
-	-Bootstrap angular app - ng-app="myApp"
+	-Create boilerplate html doc
+		-glic html5 (snippet)
+	-Add angular dependency
+		-glic angular libs (snippet)
+	-Add app.js reference
+		-glic myapp (snippet)
+	-Bootstrap angular app
+		-ng-app="myApp"
+	-Add run method to app.js
+		-glic app run (snippet)
 
--Create index-controller.js
-	-glic index (snippet)
-	-Add reference on index.html - index controller lib (snippet)
+-Add bootstrap to index.html
+	-glic bootsrap css (snippet)
+	-glic bootstrap lib (snippet)
+
+-Add app.css
+	-glic app css
+
+-Add navbar to index.html
+	-glic navbar (snippet)
+	
+-Add home folder
+	-Add home.html
+
+-Start ui-router discussion
+	-Add reference to ui-router on index.html
+		-glic ui router (snippet)
+	-Add dependency to module
+		-ui.router
+	-Add config method & state config to app.js
+		-glic app config
+	-Add ui-view to index.html
+	
+-Add home-controller.js
+	-glic home controller (snippet)
+	-Add home-controller.js to index.html
+	-Move state config from app.js to home-controller.js
+		-Add controller to config
+	-Discuss ng-controller vs state controller definition
