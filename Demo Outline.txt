@@ -1,0 +1,14 @@
+Demo Outline
+
+-Create app.js
+	-Add angular module definition - glic angular module (snippet)
+
+-Create index.html
+	-Create boilerplate html doc - glic html5 (snippet)
+	-Add angular dependency - glic angular libs (snippet)
+	-Add app.js reference - glic myapp (snippet)
+	-Bootstrap angular app - ng-app="myApp"
+
+-Create index-controller.js
+	-glic index (snippet)
+	-Add reference on index.html - index controller lib (snippet)
