@@ -36,7 +36,7 @@
         <tbody>
             <tr ng-repeat="session in sessions">
                 <td>
-                    <a href>{{session.Name}}</a>
+                    <a ui-sref="session({ sessionId : session.Id })">{{session.Name}}</a>
                 </td>
                 <td>
                     {{session.Leaders}}

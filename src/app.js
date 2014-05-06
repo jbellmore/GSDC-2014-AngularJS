@@ -1,7 +1,7 @@
 var app = angular.module('myApp', ['ui.router']);
 
 app.run(function ($rootScope) {
-    alert('myApp has started');
+    //alert('myApp has started');
 
     $rootScope.getBaseUrl = function () {
       // return "http://localhost:1998/api/v1/";

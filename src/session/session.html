@@ -1,0 +1,82 @@
+<style type="text/css">
+	#session-details-container {
+		margin-top: 50px;
+	}
+
+	pre {
+		background-color: transparent;
+		border: 0;
+		border-radius: 0;
+		font-family: sans-serif;
+		padding: 0;
+		margin: 0;
+	}
+
+	h4 {
+		margin-bottom: 10px;
+		margin-top: 15px;
+	}
+
+	#sign-up-button {
+		padding: 10px;
+		margin-top:  10px;
+	}
+
+	.speaker-container {
+		margin-top: 20px;
+		margin-right: 20px;
+	}
+
+		.speaker-container .panel-heading {
+			font-weight: bold;
+			font-size: 1.1em;
+		}
+
+		.speaker-container .panel-body {
+			font-size: .9em;
+		}
+</style>
+<div id="session-details-container" class="container">
+	<h3>{{session.Name}}</h3>
+
+	<div class="row">
+		<div class="col-md-2 text-muted">
+			{{session.StartTime | date:'EEEE'}} {{session.StartTime | date:'shortDate'}}
+			<br />
+			{{session.StartTime | date:'shortTime'}} - {{session.FinishTime | date:'shortTime'}}
+			<br />
+			{{session.Room}}
+		</div>
+	</div>
+
+	<br />
+
+	<div class="row">
+		<div class="col-md-8">
+			<div ng-bind-html="session.Description | newlines"></div>
+		</div>
+	</div>
+
+	<br />
+
+	<h3>Speakers</h3>
+
+	<div class="row container">
+		<div class="col-md-8">
+			<div ng-repeat="speaker in session.Speakers" class="panel panel-default speaker-container row">
+				<div class="panel-heading">
+					<div class="col-md-4">{{speaker.User.FirstName}} {{speaker.User.LastName}}</div>
+					<div class="text-muted col-md-4">
+						<strong>{{speaker.User.JobTitle}}</strong> - {{speaker.User.Location}}
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="panel-body">
+					<strong>Bio</strong><br />
+					{{speaker.User.Bio}}
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
